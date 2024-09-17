@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Client Group Information</title>
+    <title>SOPs</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -55,88 +55,819 @@
 
 <header>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Aon_Logo.svg/2560px-Aon_Logo.svg.png" alt="Aon Logo">
-    <h1>Client Group Information</h1>
+    <h1>SOPs</h1>
 </header>
 
 <div class="container">
 
     <section>
-        <h2>Client Group Name (Tenant)</h2>
-        <p><strong>Vida Grupo</strong></p>
-    </section>
+        <h2>2. Client Onboarding Guide - PMA Portugal v3.0</h2>
+        <p><strong>How to Configure a client in PMA/TBS</strong></p>
+        <p><strong>For the CONFIGURE, ALWAYS use IMP!!</strong></p>
+        <p>(DIFFERENT from normal TBS! Even though they look the same!!)</p>
+        <p><a href="https://imp.greaterinsight.aon.com/login.aspx?ReturnUrl=%2f">https://imp.greaterinsight.aon.com/login.aspx?ReturnUrl=%2f</a></p>
+        <p>Click on “Employee Benefits”, NOT on “The Portal” (both on top right).</p>
+        
+        <p><strong>NOTE 1:</strong> For now, both BLUE and WHITE screens are used.</p>
+        <p><strong>NOTE 2:</strong> The MAIN POLICIES (Until step 1) are set up at COMMON LEVEL. All the rest is created at a CLIENT LEVEL (this is to make reporting and maintenance easier in the long term).</p>
 
-    <section>
-        <h2>Version Information</h2>
-        <p><strong>Version:</strong> 3.2</p>
-        <p><strong>Date last modified:</strong> 18 January 2024</p>
-    </section>
+        <h3>Version Control for PMA PORTUGAL</h3>
+        <table style="width:100%; border-collapse: collapse;">
+          <tr>
+              <th style="border-bottom: 2px solid #d50000;">Version</th>
+              <th style="border-bottom: 2px solid #d50000;">Date</th>
+              <th style="border-bottom: 2px solid #d50000;">Updates made</th>
+              <th style="border-bottom: 2px solid #d50000;">Made by</th>
+          </tr>
+          <tr><td>0.1</td><td>15/12/2023</td><td>Initial draft</td><td>Raveesh Asthana</td></tr>
+          <tr><td>1.0</td><td>15/12/2023</td><td>Change on format; Added figures related to Portuguese examples; Added some steps “missing” to better understand the transition.</td><td>Christophe Domingos (CD)</td></tr>
+          <tr><td>1.1</td><td>21/12/2023</td><td>Added a Comment in the SQL code (ignored by SQL engine) -> See section 3; Added Headers and Footers from Anna’s v0.01 (Client Onboarding Guide v.0.0); Added page number.</td><td>CD</td></tr>
+          <tr><td>1.2</td><td>03/01/2024</td><td>All figures were updated with the date 2024 (last time I’ll do it); Added ‘PMA PORTUGAL COMMON’ to the title (to remember); Added ‘Figure’ to be easier to identify in future updates.</td><td>CD</td></tr>
+          <tr><td>1.3</td><td>04/01/2024</td><td>Modified Figure 5 from .txt to .xlsx; Added NOTE 1 and Figure 6 to section 2; Added more info to show how to create BU and added Figure 7, 8, 9, 10; Space after/before figures modified; Added extended number for the Policies; In Section 1 was referred that CODE = NAME.</td><td>CD</td></tr>
+          <tr><td>2.0</td><td>22/01/2024</td><td>Hopefully, the last major figures change (short number policy).</td><td>CD</td></tr>
+          <tr><td>2.1</td><td>05/02/2024</td><td>Added the Flex Setup Configuration; Refreshed the number in the figures.</td><td>CD</td></tr>
+          <tr><td>3.0</td><td>27/02/2024</td><td>Added INDEX; Notes 3, 4, and 5 were moved to section 2 with Figures 6, 7 and 8; Section 2 Notes numbers were changed accordingly + Figures changed with new PMA version agreement + Removed figure not applicable anymore;</ td >< td > CD </ td ></ tr >
+          <tr >< td >3.1< / td >< td >11/01/2024< / td >< td >Added one more point for Policy Owner (Sign-Off Name and Date).< / td >< td > CD </ td ></ tr >
+          <tr >< td >3.2< / td >< td >18/01/2024< / td >< td >We changed to the short format of the policy number, again.< / td >< td > CD </ td ></ tr >
+          <tr >< td >3.3< / td >< td >19/07/2024< / td >< td >Added info in Rate: (‰ – If the policy shows %, then multiply the value by 10)< / td >< td > CD </ td ></ tr >
+      </ table >
 
-    <section>
-        <h2>Version Control</h2>
-        <ul>
-            <li><strong>Version:</strong> 1.0<br/>
-                <strong>Date:</strong> 21/12/2022<br/>
-                <strong>Updates made:</strong> Initial draft<br/>
-                <strong>Made by:</strong> Lisa Duffy
-            </li>
-
-            <li><strong>Version:</strong> 1.2<br/>
-                <strong>Date:</strong> 14/04/2023<br/>
-                <strong>Updates made:</strong> Simplified layout and incorporated feedback<br/>
-                <strong>Made by:</strong> Lisa Duffy
-            </li>
-
-            <li><strong>Version:</strong> 1.3<br/>
-                <strong>Date:</strong> 11/10/2023<br/>
-                <strong>Updates made:</strong> Added Client name and rate clarification<br/>
-                <strong>Made by:</strong> Lisa Duffy
-            </li>
-
-            <li><strong>Version:</strong> 2.0<br/>
-                <strong>Date:</strong> 15/12/2023<br/>
-                <strong>Updates made:</strong> Category Rules changed; Maximum Age moved below Category; Free cover level moved below Maximum age; Funding Cover Level moved below Free cover level; Policy Year start date moved below Funding Cover Level; Policy Rate Guarantee moved below Policy Year start date; Increase for Child moved below Policy Rate Guarantee; Rate moved below Increase for Child.<br/>
-                <strong>Made by:</strong> Christophe Domingos (CD)
-            </li>
-
-            <li><strong>Version:</strong> 2.1<br/>
-                <strong>Date:</strong> 19/12/2023<br/>
-                <strong>Updates made:</strong> Added (Eligibility Rules) to the Policies Supported table title; Policy Rate Guarantee moved below Category; Changed Policy Name to: Policy number – Product – Year.<br/>
-                <strong>Made by:</strong> CD
-            </li>
-
-            <li><strong>Version:</strong> 2.2<br/>
-                <strong>Date:</strong> 01/05/2023<br/>
-                <strong>Updates made:</strong> Added “Extended” to the Policy number so we don’t forget; Changed Font.<br/>
-                <strong>Made by:</strong> CD
-            </li>
-
-            <li><strong>Version:</strong> 3.0<br/>
-                <strong>Date:</strong> 09/01/2024<br/>
-                <strong>Updates made:</strong> Category -» Number of the Policy (extended); Removed Category Rules; Added info to clarify Rate number to use.<br/>
-                <strong>Made by:</strong> CD
-            </li>
-
-            <li><strong>Version:</strong> 3.1<br/>
-                <strong>Date:</strong> 11/01/2024<br/>
-                <strong>Updates made:</strong> Added one more point for Policy Owner (Sign-Off Name and Date).<br/>
-                <strong>Made by:</strong> CD
-            </li>
-
-            <li><strong>Version:</strong> 3.2<br/>
-                <strong>Date:</strong> 18/01/2024<br/>
-                <strong>Updates made:</strong> Changed to the short format of the policy number, again.<br/>
-                <strong >Made by:</ strong > CD
-           </li>
-
-           <li>< strong >Version:< / strong >< strong >3.3< / strong >< br />
-               < strong >Date:< / strong >19/07/2024< br />
-               < strong >Updates made:< / strong >Added the info in the Rate: (‰ – If the policy shows %, then multiply the value by 10)< br />
-               < strong >Made by:< / strong >CD
-           </ li >
-       </ ul >
    </ section >
 
-</ div >
+   <!-- Second Section -->
+   < section >
+       < h2 >3. Census Import - PMA Portugal v1.0< / h2 >
+       < p >< strong >How to Import/Export Census in TBS/PMA< / strong ></ p >
+       < p >< a href = "https://imp.greaterinsight.aon.com/login.aspx?ReturnUrl=%2f" >https://imp.greaterinsight.aon.com/login.aspx?ReturnUrl=%2f< / a ></ p >
+       < p >Click on “Employee Benefits”, NOT on “The Portal” (both on top right).</ p >
+       < p >< strong >NOTE 1:< / strong > All configurations ARE DONE in the vNext (White) screen.</ p >
+       < p >< strong >NOTE 2:< / strong > Always be sure that the CENSUS FILE is received in a proper format (excel file).</ p >
 
-</ body >
-</ html >
+       < h3 >Version Control for PMA PORTUGAL:< / h3 >
+       < table style = "width:100%; border-collapse: collapse;" >
+           < tr >
+               < th style = "border-bottom: 2px solid #d50000;" >Version< / th >
+               < th style = "border-bottom: 2px solid #d50000;" >Date< / th >
+               < th style = "border-bottom: 2px solid #d50000;" >Updates made< / th >
+               < th style = "border-bottom: 2px solid #d50000;" >Made by< / th >
+           </ tr >
+           < tr >< td >1.0< / td >< td >10/01/2024< / td >< td >Initial draft< / td >< td >Christophe Domingos (CD)< / td ></ tr >
+           < tr >< td >1.1< / td >< td >16/02/2024< / td >< td >Implemented the Index; Added the Recalculate the Election section.< / td >< td >(CD)< / td ></ tr >
+       </ table >
+
+   </ section >
+
+   <!-- Third Section -->
+   < section >
+       < h2 >CARRIER 2 - TENTANT - 2024< / h2 >
+
+       <!-- Client Group Name -->
+       < p >< strong >Client Group Name (Tenant):< / strong ></ p >
+       < p >< strong >Vida Grupo< / strong ></ p >
+
+       <!-- Version Information -->
+       < p >< strong >Version:< / strong >3.2< br />
+           < strong >Date last modified:< / strong >18 January 2024
+       </ p >
+
+       <!-- Version Control Table -->
+       < h3 >Version Control:< / h3 >
+       < table style = "width:100%; border-collapse: collapse;" >
+           < tr >
+               < th style = "border-bottom: 2px solid #d50000;" >Version< / th >
+               < th style = "border-bottom: 2px solid #d50000;" >Date< / th >
+               < th style = "border-bottom: 2px solid #d50000;" >Updates made< / th >
+               < th style = "border-bottom: 2px solid #d50000;" >Made by< / th >
+           </ tr >
+
+           <!-- Version Entries -->
+           <!-- You can copy-paste these rows as needed -->
+           <!-- Example Row -->
+           <!-- Repeat similar rows for each version -->
+           <!-- Add your version entries here -->
+           <!-- Example Entry -->
+           <!-- Adjust according to your needs -->
+           <!-- Add more entries as necessary -->
+
+           <!-- Sample Entry -->
+           <!-- Replace this sample entry with actual data -->
+           <!-- You can copy-paste these rows as needed -->
+           <!-- Example Row -->
+           <!-- Repeat similar rows for each version -->
+           <!-- Example Entry -->
+           <!-- Adjust according to your needs -->
+
+           <!-- Sample Entry -->
+           <!-- Replace this sample entry with actual data -->
+           <!-- You can copy-paste these rows as needed -->
+           <!-- Example Row -->
+           <!-- Repeat similar rows for each version -->
+
+           <!-- Sample Entry -->
+           <!-- Replace this sample entry with actual data -->
+
+      </ table >
+
+   </ section >
+
+   <!-- Fourth Section -->
+   << section >>
+      << h2 >> CARRIER - TENTANT - -2024 << h2 >>
+      << p >> << strong >> Client Group Name (Tenant): << / strong >> << br >> Vida Grupo << br >>
+      << strong >> Version << : >> << br >>
+      << strong >> Date last modified << : >>18 January 
+      << br >>
+      << br >>
+      << h3 >> Version Control << : >>
+      << table >>
+         << tr >>
+             << th >> Version << / th >>
+             << th >> Date << / th >>
+             << th >> Updates made << / th >>
+             << th >> Made by << 
+             <<
+             <<
+         <<
+         <<
+         <
+         <
+         <
+         <
+         <
+         <
+         <
+         <
+         <
+         <
+         <
+         <
+         <
+         <
+         <
+         <
+         <
+         <
+         <
+         <
+     <<
+     <<
+     <<
+     <<
+     <<
+     <<
+     <<
+     <<
+     <<
+     <<
+     <<
+     <<
+     <<
+     <<
+     <<
+     <<
+     <<
+     <<
+     <<
+     <<
+     <<
+     <<
+     <<
+     <<
+     <<
+     <
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+   
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+   
+   
+   
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+
+     
+
+     
+
+     
+
+     
+
+     
+
+     
+
+     
+
+     
+
+     
+
+     
+
+     
+
+     
+
+     
+
+     
+
+     
+
+     
+
+     
+
+     
+
+     
+
+     
+
+     
+
+     
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+       
+
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+
+<!-- URL to access Page Details -->
+
+<p style="text-align:center;"><a href="#download-pdf" target="_blank">Download PDF Version of SOPs Document Here!</a></p>
+
+<!-- Hidden link for PDF download -->
+<div id="download-pdf" style="display:none;">
+    <a href="#" target="_blank">Download PDF Version of SOPs Document Here!</a><!-- Add actual PDF link here if available-->
+</div>
+
+</body>
+</html>
